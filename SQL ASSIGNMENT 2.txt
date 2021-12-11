@@ -1,0 +1,124 @@
+1.These are types of SQL sub-language
+to define, manipulate and control data and transactions in SQL language.
+                           
+DDL - Data Definition Language
+Command with e.g,, 
+CREATE - CREATE DATABASE explainjava;
+DROP- DROP TABLE user
+ALTER - ALTER TABLE user ADD COLUMN lastname VARCHAR(25) NOT NULL;
+RENAME -RENAME TABLE user TO student
+TRUNCATE - TRUNCATE student
+
+DML - Data Manipulation Language
+SELECT - SELECT * FROM student;
+INSERT - INSERT INTO student (name, lastname) 
+VALUES ('Chinmaya', 'brahma');
+UPDATE-UPDATE student
+set name = 'Ipsita'
+where name = 'Chinmaya'
+DELETE - DELETE 
+FROM student 
+where lastname = 'brahma'
+
+DCL - Data Control Language
+create schema Secure_audit authorization dbo
+
+create table emp_audit(sid_emp int not null)
+
+grant select on SCHEMA :: Secure_audit to staff_audit
+deny select on SCHEMA :: Secure_audit to Biz_user
+
+TCL
+START TRANSACTION - START TRANSACTION;
+COMMIT -START TRANSACTION;
+INSERT INTO student (name, lastname) VALUES ('Dmytro', 'Shvechikov');
+COMMIT;
+ROLLBACK - START TRANSACTION;
+INSERT INTO student (name, lastname) VALUES ('Dmytro', 'Shvechikov');
+ROLLBACK;
+
+
+2.column Alias are used to make column headings in your result 
+et easier to read. Alias is temporary name assign .
+E.g., 
+employee_table empy
+
+3.UPDATE EMP 
+SET ENAME ='Ipsita
+WHERE ENAME='scott';
+
+4.SELECT
+EMPNO,
+ENAME,
+SALARY
+FROM EMPLOYEETAB
+WHERE SALARY > 3000
+AND ENAME = KING
+
+5.4.SELECT
+EMPNO,
+ENAME,
+SALARY
+FROM EMPLOYEETAB
+WHERE SALARY IS NOT 3000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     
